@@ -1,0 +1,15 @@
+Για το Backend (Port 8000):
+
+cd backend
+
+Φτιάξε venv και τρέξε: pip install fastapi uvicorn pydantic
+
+uvicorn main:app --reload
+
+Για το Frontend:
+
+cd frontend
+
+npm install (έχει μέσα react-router-dom, axios κλπ)
+
+npm run build && npm run preview (για να δεις το production build με τα 100άρια στο Lighthouse) ή npm run dev."
