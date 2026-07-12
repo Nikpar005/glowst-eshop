@@ -37,3 +37,14 @@ A complete and modern e-commerce application built with **FastAPI** on the Backe
 ```bash
 git clone [https://github.com/YOUR_USERNAME/glowst-eshop.git](https://github.com/YOUR_USERNAME/glowst-eshop.git)
 cd glowst-eshop/backend
+
+py -3.13 -m pip install -r requirements.txt
+
+py -3.13 -m uvicorn main:app --reload
+
+The API will be up and running at: http://127.0.0.1:8000
+
+You can view the interactive API documentation (Swagger UI) at: http://127.0.0.1:8000/docs
+
+🔒 Security & Environment
+For security purposes, sensitive credentials (such as the JWT SECRET_KEY and the Stripe API Key) are protected locally and excluded from version control via the .gitignore file. In a production environment, these are injected securely using Environment Variables.
