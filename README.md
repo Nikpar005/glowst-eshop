@@ -2,6 +2,17 @@
 
 A complete and modern e-commerce application built with **FastAPI** on the Backend and **React** on the Frontend. The application features a comprehensive management system (Admin Panel), dynamic product searching, and an integrated checkout flow powered by **Stripe**.
 
+
+![Browsing the collection, picking a variant and adding it to the bag](docs/screenshots/demo.gif)
+
+| Collection | Product |
+|---|---|
+| ![Collection](docs/screenshots/collection.png) | ![Product page with colour and size variants](docs/screenshots/product.png) |
+| **Bag** | **Admin panel** |
+| ![Bag](docs/screenshots/cart.png) | ![Admin panel with per-variant prices](docs/screenshots/admin.png) |
+
+<sub>The product pictures in these screenshots are placeholder illustrations; the seeded catalogue uses photos from Unsplash.</sub>
+
 ---
 
 ## 🚀 Technologies Used
@@ -17,7 +28,8 @@ A complete and modern e-commerce application built with **FastAPI** on the Backe
 
 ### Frontend
 * **React.js** - Component-based library for the store's User Interface.
-* **Tailwind CSS** - For modern, clean, and responsive styling.
+* **Vite** - Development server and production build.
+* **React Router** and **Axios** - Page routing and API calls.
 
 ---
 
@@ -35,7 +47,7 @@ A complete and modern e-commerce application built with **FastAPI** on the Backe
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/glowst-eshop.git](https://github.com/YOUR_USERNAME/glowst-eshop.git)
+git clone https://github.com/Nikpar005/glowst-eshop.git
 cd glowst-eshop/backend
 
 py -3.13 -m pip install -r requirements.txt
