@@ -1,6 +1,6 @@
 from database import engine, SessionLocal
 import models
-from auth import hash_password
+from auth import get_password_hash
 
 def seed():
     # Δημιούργησε τους πίνακες
@@ -17,7 +17,7 @@ def seed():
     # --- ADMIN ---
     admin = models.Admin(
         username="admin",
-        hashed_password=hash_password("glowst2026")
+        hashed_password=get_password_hash("glowst2026")
     )
     db.add(admin)
 
@@ -140,7 +140,7 @@ def seed():
     db.commit()
     db.close()
     print("✅ DB seeded successfully!")
-    print("👤 Admin: username=admin, password=admin123")
+    print("👤 Admin: username=admin, password=glowst2026")
 
 if __name__ == "__main__":
     seed()
